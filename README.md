@@ -9,12 +9,13 @@
 * `systemctl enable nginx`
 
 ### * Nginx directories:
-  Config dir: /etc/nginx
-  Root dir: /usr/share/nginx/html
+*  Config dir: /etc/nginx
+*  Root dir: /usr/share/nginx/html
 
-  Nginx configuration:
-  /etc/nginx/nginx.conf
+### *  Nginx configuration:
+*  /etc/nginx/nginx.conf
 
+  ```
   [http]
   #Stop nginx from displaying server tokens
   server_tokens off;
@@ -39,5 +40,5 @@
     fastcgi_param   PATH_INFO	$fastcgi_path_info;
     fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
   }
-
+```
 2. Change ssh port to 22022:
