@@ -41,4 +41,4 @@
     fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
   }
 ```
-2. Change ssh port to 22022:
+### 2. Change ssh port to 22022:
