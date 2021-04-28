@@ -101,3 +101,6 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 exclude=postgresql*
 ...
 ```
+* `yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
+
+* `yum install postgresql96 postgresql96-contrib postgresql96-libs postgresql96-server`
