@@ -115,5 +115,5 @@ exclude=postgresql*
 * PostgreSQL Port: 5432
 
 * Log into PostgreSQL to create moodle database & moodle user
-`postgres=# CREATE USER moodleuser WITH PASSWORD 'yourpassword';`
-`postgres=# CREATE DATABASE moodle WITH OWNER moodleuser;`
+* `postgres=# CREATE USER moodleuser WITH PASSWORD 'yourpassword';`
+* `postgres=# CREATE DATABASE moodle WITH OWNER moodleuser;`
