@@ -70,3 +70,4 @@ enabled = true
 enabled = true
 
 ```
+* `systemctl start fail2ban`
