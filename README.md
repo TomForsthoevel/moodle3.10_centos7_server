@@ -117,3 +117,10 @@ exclude=postgresql*
 * Log into PostgreSQL to create moodle database & moodle user
 * `postgres=# CREATE USER moodleuser WITH PASSWORD 'yourpassword';`
 * `postgres=# CREATE DATABASE moodle WITH OWNER moodleuser;`
+
+* Paste the following into `/var/lib/pgsql/9.6/data/pg_hba.conf`
+
+```
+# TYPE      DATABASE    USER            CIDR-ADDRESS        METHOD
+host        moodle      moodleuser      127.0.0.1/32        password
+```
