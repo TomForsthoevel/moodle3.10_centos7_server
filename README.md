@@ -1,9 +1,9 @@
 ## Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
 
 ### 1. Install & configure Nginx
-`yum -y update`
-`yum install -y epel-release`
-`yum install nginx`
+* `yum -y update`
+* `yum install -y epel-release`
+* `yum install nginx`
 
   -> systemctl start nginx
   -> systemctl enable nginx
