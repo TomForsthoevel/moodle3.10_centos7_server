@@ -5,8 +5,8 @@
 * `yum install -y epel-release`
 * `yum install nginx`
 
-  -> systemctl start nginx
-  -> systemctl enable nginx
+* `systemctl start nginx`
+* `systemctl enable nginx`
 
   Nginx directories:
   Config dir: /etc/nginx
