@@ -134,6 +134,7 @@ php74-php-gd php74-php-gmp php74-php-intl php74-php-json php74-php-mbstring php7
 php74-php-pdo php74-php-pgsql php74-php-process php74-php-pspell php74-php-soap php74-php-sodium php74-php-xml
 php74-php-xmlrpc php74-php-pecl-zip
 ```
+* PHP config file: `/etc/opt/remi/php74/php.ini`
 
 ### 7. Install Git
 * `yum install git`
@@ -144,3 +145,16 @@ php74-php-xmlrpc php74-php-pecl-zip
 * `git clone https://github.com/moodle/moodle.git`
 * `git checkout MOODLE_310_STABLE`
 * Copy the Moodle file into `/usr/share/nginx/html`
+```
+# chown apache /path/to/moodle
+# cd /path/to/moodle/admin/cli
+# sudo -u www-data /usr/bin/php74 install.php
+# sudo -u www-data /usr/bin/php74 install_database.php --agree-license --adminpass=password
+# chown -R root /path/to/moodle
+```
+
+* Add cronjob for moodle:
+`# crontab -u apache -e`
+```
+* * * * * /usr/bin/php74  /usr/share/nginx/html/admin/cli/cron.php >/dev/null
+```
