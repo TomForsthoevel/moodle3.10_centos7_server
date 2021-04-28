@@ -1,6 +1,6 @@
 ## Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
 
-### 1. Install & configure Nginx
+### 1. Install nginx
 * `yum -y update`
 * `yum install -y epel-release`
 * `yum install nginx`
@@ -71,3 +71,33 @@ enabled = true
 
 ```
 * `systemctl start fail2ban`
+
+### 4. Install certbot for nginx and getting a certificate:
+* `yum install certbot-nginx`
+* `certbot --nginx -d moodle-tom.ssystems.de`
+
+### 5. Install postgresql using the official postgresql repo:
+* Exclude postgresql from CentOS Base Repository
+* `nano /etc/yum.repos.d/CentOS-Base.repo`
+
+```
+...
+[base]
+name=CentOS-$releasever - Base
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+exclude=postgresql*
+
+#released updates
+[updates]
+name=CentOS-$releasever - Updates
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+#baseurl=http://mirror.centos.org/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+exclude=postgresql*
+...
+```
