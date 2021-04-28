@@ -54,7 +54,8 @@
 * `yum install fail2ban`
 * `systemctl enable fail2ban`
 * `touch /etc/fail2ban/jail.local`
-* Paste the following code```
+* Paste the following code
+```
 [DEFAULT]
 # Ban hosts for one hour:
 bantime = 3600
