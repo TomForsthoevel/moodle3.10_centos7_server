@@ -109,3 +109,5 @@ exclude=postgresql*
 
 * `systemctl start postgresql-9.6`
 * `systemctl enable postgresql-9.6`
+
+* Postgresql dir: `/var/lib/pgsql/9.6/`
