@@ -154,7 +154,7 @@ php74-php-xmlrpc php74-php-pecl-zip
 ```
 
 * Add cronjob for moodle:
-`# crontab -u apache -e`
++ `# crontab -u apache -e`
 ```
 * * * * * /usr/bin/php74  /usr/share/nginx/html/admin/cli/cron.php >/dev/null
 ```
