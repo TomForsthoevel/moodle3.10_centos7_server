@@ -1,6 +1,4 @@
-# moodle3.10_centos7_server
-
-Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
+# Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
 
 1. Install & configure Nginx
   -> yum -y update
@@ -27,7 +25,7 @@ Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
   root         /usr/share/nginx/html/;
 
 
-  # Only alloww GET, HEAD & POST HTTP requests
+  # Only allow GET, HEAD & POST HTTP requests
   if ($request_method !~ ^(GET|HEAD|POST)$ ){
     return 405;
   }
@@ -41,3 +39,7 @@ Installation of Moodle 3.10 on CentOS 7 with Nginx, Postgresql and PHP
     fastcgi_param   PATH_INFO	$fastcgi_path_info;
     fastcgi_param   SCRIPT_FILENAME $document_root$fastcgi_script_name;
   }
+
+2. Change ssh port to 22022:
+
+  
