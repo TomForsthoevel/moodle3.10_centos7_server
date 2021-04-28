@@ -124,3 +124,13 @@ exclude=postgresql*
 # TYPE      DATABASE    USER            CIDR-ADDRESS        METHOD
 host        moodle      moodleuser      127.0.0.1/32        password
 ```
+
+### 6. Install PHP 7.4
+`yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm`
+
+```
+yum install php74-php php74-php-bcmath php74-php-cli php74-php-common php74-php-devel php74-php-fpm
+php74-php-gd php74-php-gmp php74-php-intl php74-php-json php74-php-mbstring php74-php-mysqlnd php74-php-opcache
+php74-php-pdo php74-php-pgsql php74-php-process php74-php-pspell php74-php-soap php74-php-sodium php74-php-xml
+php74-php-xmlrpc php74-php-pecl-zip
+```
