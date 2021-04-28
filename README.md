@@ -134,3 +134,13 @@ php74-php-gd php74-php-gmp php74-php-intl php74-php-json php74-php-mbstring php7
 php74-php-pdo php74-php-pgsql php74-php-process php74-php-pspell php74-php-soap php74-php-sodium php74-php-xml
 php74-php-xmlrpc php74-php-pecl-zip
 ```
+
+### 7. Install Git
+* `yum install git`
+* `git config --global user.name "Tom Forsthoevel"`
+* `git config --global user.email "tom.forsthoevel@protonmail.com"`
+
+### 8. Install Moodle 3.10
+* `git clone https://github.com/moodle/moodle.git`
+* `git checkout MOODLE_310_STABLE`
+* Copy the Moodle file into `/usr/share/nginx/html`
