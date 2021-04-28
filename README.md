@@ -104,3 +104,8 @@ exclude=postgresql*
 * `yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
 
 * `yum install postgresql96 postgresql96-contrib postgresql96-libs postgresql96-server`
+
+* `/usr/pgsql-9.6/bin/postgresql96-setup initdb`
+
+* `systemctl start postgresql-9.6`
+* `systemctl enable postgresql-9.6`
