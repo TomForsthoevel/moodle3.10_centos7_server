@@ -8,11 +8,11 @@
 * `systemctl start nginx`
 * `systemctl enable nginx`
 
-### * Nginx directories:
+###  Nginx directories:
 *  Config dir: /etc/nginx
 *  Root dir: /usr/share/nginx/html
 
-### *  Nginx configuration:
+###   Nginx configuration:
 *  /etc/nginx/nginx.conf
 
   ```
