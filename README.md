@@ -138,8 +138,8 @@ php74-php-xmlrpc php74-php-pecl-zip
 
 ### 7. Install Git
 * `# yum install git`
-* `# git config --global user.name "Tom Forsthoevel"`
-* `# git config --global user.email "tom.forsthoevel@protonmail.com"`
+* `# git config --global user.name "Username"`
+* `# git config --global user.email "Email"`
 
 ### 8. Install Moodle 3.10
 * `# git clone https://github.com/moodle/moodle.git`
